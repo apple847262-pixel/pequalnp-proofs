@@ -1,0 +1,8 @@
+import PEqualNP.Defs
+
+theorem PEqualNP.Outside.L_meta_19769 : (PEqualNP.Represents.RepSizeAtMost (fun u v : Fin 8 => (1910587134026600745 : ℕ).testBit (8 * u.val + v.val)) 28) := by
+  refine ⟨⟨[⟨PEqualNP.CircuitLowerBounds.GateOp.or, [3, 8]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [4, 9]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [7, 14]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [0, 10]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [1, 11]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [6, 13]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [2, 5]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [2, 15]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [18, 23]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [5, 12]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [17, 25]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [11, 13]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [12, 16]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [18, 28]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [15, 16]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [17, 30]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [16, 22]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [27, 32]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.and, [19, 33]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.and, [21, 31]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.and, [20, 29]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.and, [24, 26]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [34, 35]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [36, 38]⟩, ⟨PEqualNP.CircuitLowerBounds.GateOp.or, [37, 39]⟩], 40⟩, ?_, by decide, ?_⟩
+  · intro g hg
+    simp only [List.mem_cons, List.not_mem_nil, or_false] at hg
+    rcases hg with rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl | rfl <;> simp
+  · decide +kernel
